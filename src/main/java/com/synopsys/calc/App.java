@@ -128,6 +128,7 @@ public class App {
 				log.debug("Let command syntax is wrong");
 				return Integer.MIN_VALUE;
 			}
+			//evaluating let command
 			String var = list.get(1);
 			Integer oldValue = map.get(var);
 			map.put(var, parseExpression(list.get(2), map));
